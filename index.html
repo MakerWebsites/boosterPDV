@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BoosterPDV — Sistema de vendas para MEI, delivery e lojas pequenas</title>
+<meta name="description" content="Sistema de caixa que roda no navegador: vendas com leitor de código de barras, PIX com QR Code, estoque e fechamento de caixa. Pagamento único de R$ 49,90.">
+<meta property="og:title" content="BoosterPDV — O caixa não bate? O problema é o caderninho.">
+<meta property="og:description" content="Vendas, PIX com QR Code, estoque e fechamento de caixa. Sem instalar, sem mensalidade.">
+<meta property="og:image" content="img/capa.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#15408a}a:hover{color:#0b2447}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:60px;padding:0 34px;border-radius:14px;background:#f0a500;color:#2a1700;font-family:Poppins,sans-serif;font-weight:700;font-size:19px;text-decoration:none;box-shadow:0 10px 30px rgba(240,165,0,.35)}
+.cta:hover{background:#ffb81c;color:#2a1700}
+.shot{border-radius:16px;overflow:hidden;box-shadow:0 30px 70px rgba(11,36,71,.25);border:1px solid #dfe4ec;background:#0b1a33}
+.shot img{display:block;width:100%;height:auto}
+.bar{height:34px;display:flex;align-items:center;gap:7px;padding:0 14px}
+.bar i{width:11px;height:11px;border-radius:50%;display:block}
+@media (max-width:900px){
+ .grid2,.grid3{grid-template-columns:1fr;gap:32px}
+ .grid4{grid-template-columns:1fr 1fr}
+ .h1{font-size:40px !important}
+ .h2{font-size:32px !important}
+ .rev{order:-1}
+ .tbl{overflow-x:auto}
+}
+@media (max-width:560px){ .grid4{grid-template-columns:1fr} .wrap{padding:0 20px} header .cta{font-size:14px !important;padding:0 14px !important;white-space:nowrap} }
+</style>
+
+</head>
+<body>
+
+
+<div style="font-family: Inter, sans-serif; color: #1b2536; background: #ffffff">
+
+<!-- TOP BAR -->
+<header style="background: #0b2447; position: sticky; top: 0; z-index: 10">
+ <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 16px">
+  <div style="display: flex; align-items: center; gap: 10px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 22px; color: #ffffff">
+   <div style="width: 36px; height: 36px; border-radius: 9px; background: #f0a500; color: #2a1700; display: flex; align-items: center; justify-content: center; font-size: 18px">B</div>
+   <span>Booster<span style="color: #f0a500">PDV</span></span>
+  </div>
+  <a href="LINK_DO_CHECKOUT_KIWIFY" class="cta" style="min-height: 46px; padding: 0 22px; font-size: 16px">Quero o BoosterPDV</a>
+ </div>
+</header>
+
+<!-- HERO -->
+<section style="background: #0b2447; color: #ffffff; padding: 72px 0 96px">
+ <div class="wrap grid2">
+  <div>
+   <p style="margin: 0 0 18px; font-weight: 600; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #f0a500">Para MEIs, delivery e lojas pequenas</p>
+   <h1 class="h1" style="margin: 0; font-family: Poppins, sans-serif; font-weight: 800; font-size: 56px; line-height: 1.08; letter-spacing: -1.5px">O caixa não bate no fim do dia? <span style="color: #f0a500">O problema não é você. É o caderninho.</span></h1>
+   <p style="margin: 24px 0 34px; font-size: 20px; line-height: 1.55; color: #c9d6ee">Seja no balcão da sua lojinha ou nos pedidos do delivery: o BoosterPDV registra cada venda, dá baixa no estoque sozinho, gera PIX com QR Code e fecha o caixa com a conta certa. Você para de adivinhar para onde foi o dinheiro.</p>
+   <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center">
+    <a href="LINK_DO_CHECKOUT_KIWIFY" class="cta">Quero organizar meu caixa
+     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+    </a>
+   </div>
+   <div style="display: flex; flex-wrap: wrap; gap: 22px; margin-top: 28px; font-size: 15px; color: #c9d6ee">
+    <span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3ccf8e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Sem instalar nada</span>
+    <span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3ccf8e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Funciona sem internet</span>
+    <span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3ccf8e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Qualquer leitor de código de barras</span>
+   </div>
+  </div>
+  <div class="shot" style="border-color: rgba(255,255,255,.15)">
+   <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div>
+   <img src="img/vendas.jpg" alt="Tela de vendas do BoosterPDV com camiseta, boné, capinhas e meias no carrinho, total de R$ 174,50">
+  </div>
+ </div>
+</section>
+
+<!-- DOR -->
+<section style="padding: 96px 0; background: #ffffff">
+ <div class="wrap">
+  <h2 class="h2" style="margin: 0 0 14px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -1px; text-align: center; color: #0b2447">Seja sincero: quantas dessas acontecem na sua loja?</h2>
+  <p style="margin: 0 auto 48px; max-width: 640px; text-align: center; font-size: 18px; color: #5b6b85">Se você marcou pelo menos uma, você está perdendo dinheiro todo mês e não está vendo.</p>
+  <div class="grid4">
+   <div style="border: 1px solid #f3c9c9; background: #fdf3f3; border-radius: 16px; padding: 28px">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c42b2b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M15 9l-6 6M9 9l6 6"></path></svg>
+    <h3 style="margin: 16px 0 8px; font-family: Poppins, sans-serif; font-size: 20px; color: #0b2447">O caixa nunca bate</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4a5568">Fim do dia, falta dinheiro na gaveta e ninguém sabe explicar onde foi.</p>
+   </div>
+   <div style="border: 1px solid #f3c9c9; background: #fdf3f3; border-radius: 16px; padding: 28px">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c42b2b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"></path><path d="M12 13v8M3 8l9 5 9-5"></path></svg>
+    <h3 style="margin: 16px 0 8px; font-family: Poppins, sans-serif; font-size: 20px; color: #0b2447">Produto acaba sem aviso</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4a5568">Você só descobre que acabou quando o cliente pede. E ele vai comprar em outro lugar.</p>
+   </div>
+   <div style="border: 1px solid #f3c9c9; background: #fdf3f3; border-radius: 16px; padding: 28px">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c42b2b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h12l4 4v12H4z"></path><path d="M8 12h8M8 16h5"></path></svg>
+    <h3 style="margin: 16px 0 8px; font-family: Poppins, sans-serif; font-size: 20px; color: #0b2447">Fiado perdido no papel</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4a5568">O caderno some, a letra não dá pra ler, e aquele valor nunca mais volta.</p>
+   </div>
+   <div style="border: 1px solid #f3c9c9; background: #fdf3f3; border-radius: 16px; padding: 28px">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c42b2b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+    <h3 style="margin: 16px 0 8px; font-family: Poppins, sans-serif; font-size: 20px; color: #0b2447">Horas contando nota</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4a5568">Loja fechada e você ainda está somando papel em vez de ir pra casa.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- CUSTO -->
+<section style="padding: 88px 0; background: #fff6e3">
+ <div class="wrap" style="max-width: 980px; text-align: center">
+  <p style="margin: 0 0 12px; font-weight: 700; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #a35a00">Faça a conta</p>
+  <h2 class="h2" style="margin: 0 0 40px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -1px; color: #0b2447">Quanto custa continuar no caderninho?</h2>
+  <div class="grid3">
+   <div style="background: #ffffff; border-radius: 16px; padding: 30px 20px; border: 1px solid #f1dfb8">
+    <p style="margin: 0; font-size: 16px; color: #5b6b85">Se somem só</p>
+    <p style="margin: 6px 0; font-family: Poppins, sans-serif; font-weight: 800; font-size: 44px; color: #0b2447">R$ 20</p>
+    <p style="margin: 0; font-size: 16px; color: #5b6b85">por dia, sem você perceber…</p>
+   </div>
+   <div style="background: #ffffff; border-radius: 16px; padding: 30px 20px; border: 1px solid #f1dfb8">
+    <p style="margin: 0; font-size: 16px; color: #5b6b85">em 30 dias são</p>
+    <p style="margin: 6px 0; font-family: Poppins, sans-serif; font-weight: 800; font-size: 44px; color: #b32626">R$ 600</p>
+    <p style="margin: 0; font-size: 16px; color: #5b6b85">por mês</p>
+   </div>
+   <div style="background: #0b2447; border-radius: 16px; padding: 30px 20px">
+    <p style="margin: 0; font-size: 16px; color: #c9d6ee">e em um ano, são</p>
+    <p style="margin: 6px 0; font-family: Poppins, sans-serif; font-weight: 800; font-size: 44px; color: #f0a500">R$ 7.200</p>
+    <p style="margin: 0; font-size: 16px; color: #c9d6ee">que saíram do seu bolso</p>
+  </div>
+  </div>
+  <p style="margin: 32px auto 0; max-width: 700px; font-size: 18px; line-height: 1.6; color: #4a5568">Troco errado, venda não anotada, produto que venceu na prateleira, fiado esquecido. É um exemplo, mas a sua loja provavelmente tem um número parecido, e você só vai saber qual quando começar a controlar.</p>
+ </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section style="padding: 104px 0 40px; background: #ffffff">
+ <div class="wrap" style="text-align: center; max-width: 820px">
+  <p style="margin: 0 0 12px; font-weight: 700; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #15408a">Conheça o BoosterPDV</p>
+  <h2 class="h2" style="margin: 0 0 18px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 46px; line-height: 1.12; letter-spacing: -1px; color: #0b2447">Um sistema de caixa completo que roda direto no seu navegador</h2>
+  <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #5b6b85">Feito para quem toca o negócio sozinho ou com pouca gente: sem instalação, sem mensalidade, sem complicação. Abriu, vendeu. Estas são telas reais do sistema:</p>
+ </div>
+</section>
+
+<!-- FEATURE 1 -->
+<section style="padding: 56px 0">
+ <div class="wrap grid2">
+  <div>
+   <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: #157a48">Vendas</p>
+   <h3 class="h2" style="margin: 0 0 16px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 36px; line-height: 1.15; color: #0b2447">Bipou, entrou. Fila andando.</h3>
+   <p style="margin: 0 0 20px; font-size: 18px; line-height: 1.6; color: #4a5568">Aponte o leitor e o produto já cai na venda, com preço e quantidade. Não precisa clicar em campo nenhum: o sistema reconhece o leitor em qualquer lugar da tela.</p>
+   <ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.9; color: #1b2536">
+    <li>Funciona com leitor USB, Bluetooth ou sem fio, sem driver</li>
+    <li>Atalhos de teclado: F2 consulta, F4 finaliza</li>
+    <li>Cupom pronto para impressora térmica 58 ou 80 mm</li>
+   </ul>
+  </div>
+  <div class="shot"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><img src="img/vendas.jpg" alt="Carrinho de venda com camiseta, boné, capinha de celular e kit de meias"></div>
+ </div>
+</section>
+
+<!-- FEATURE 2 PIX -->
+<section style="padding: 56px 0; background: #f5f7fb">
+ <div class="wrap grid2">
+  <div class="shot"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><img src="img/pix.jpg" alt="Janela de pagamento PIX com QR Code e código Copia e Cola no valor de R$ 174,50"></div>
+  <div class="rev">
+   <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: #157a48">PIX</p>
+   <h3 class="h2" style="margin: 0 0 16px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 36px; line-height: 1.15; color: #0b2447">QR Code do PIX com o valor exato da venda</h3>
+   <p style="margin: 0 0 20px; font-size: 18px; line-height: 1.6; color: #4a5568">Chega de digitar sua chave para cada cliente e torcer para ele não errar o valor. O sistema gera o QR Code oficial do PIX, direto na sua conta, sem taxa de maquininha.</p>
+   <ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.9; color: #1b2536">
+    <li>Padrão oficial do Banco Central, lido por qualquer banco</li>
+    <li>Código "Pix Copia e Cola" com um clique</li>
+    <li>Também recebe em dinheiro (com troco calculado), cartão e a prazo</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- FEATURE 3 ESTOQUE -->
+<section style="padding: 56px 0">
+ <div class="wrap grid2">
+  <div>
+   <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: #157a48">Estoque</p>
+   <h3 class="h2" style="margin: 0 0 16px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 36px; line-height: 1.15; color: #0b2447">O sistema avisa antes de faltar</h3>
+   <p style="margin: 0 0 20px; font-size: 18px; line-height: 1.6; color: #4a5568">Cada venda dá baixa no estoque sozinha. Defina o estoque mínimo e o BoosterPDV marca o que está <b>Baixo</b> ou <b>Esgotado</b>, para você comprar na hora certa e não perder venda.</p>
+   <ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.9; color: #1b2536">
+    <li>Histórico de cada entrada e saída, com motivo</li>
+    <li>Cadastro de produtos, clientes e fornecedores</li>
+   </ul>
+  </div>
+  <div class="shot"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><img src="img/estoque.jpg" alt="Tela de estoque com status OK, Baixo e Esgotado por produto"></div>
+ </div>
+</section>
+
+<!-- FEATURE 4 RELATORIOS -->
+<section style="padding: 56px 0; background: #f5f7fb">
+ <div class="wrap grid2">
+  <div class="shot"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><img src="img/relatorios.jpg" alt="Relatório de vendas com total vendido, número de vendas, ticket médio e produtos mais vendidos"></div>
+  <div class="rev">
+   <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: #157a48">Relatórios e financeiro</p>
+   <h3 class="h2" style="margin: 0 0 16px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 36px; line-height: 1.15; color: #0b2447">Saiba quanto vendeu e o que mais sai</h3>
+   <p style="margin: 0 0 20px; font-size: 18px; line-height: 1.6; color: #4a5568">Escolha o período e veja total vendido, ticket médio, quanto entrou em cada forma de pagamento e os produtos campeões. Decisão com número, não com achismo.</p>
+   <ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.9; color: #1b2536">
+    <li>Venda a prazo vai direto para Contas a Receber</li>
+    <li>Contas a Pagar para não esquecer nenhum boleto</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- FEATURE 5 FECHAMENTO -->
+<section style="padding: 56px 0 96px">
+ <div class="wrap grid2">
+  <div>
+   <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: #157a48">Fechamento de caixa</p>
+   <h3 class="h2" style="margin: 0 0 16px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 36px; line-height: 1.15; color: #0b2447">O fim do dia em um clique, sem susto</h3>
+   <p style="margin: 0 0 20px; font-size: 18px; line-height: 1.6; color: #4a5568">O sistema já sabe quanto deveria ter na gaveta: abertura, vendas em dinheiro, sangrias e suprimentos. Você digita o que contou e ele mostra a diferença na hora.</p>
+   <ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.9; color: #1b2536">
+    <li>Total separado por Dinheiro, PIX, Cartão e A Prazo</li>
+    <li>Usuários com login e senha para cada operador</li>
+   </ul>
+  </div>
+  <div class="shot"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><img src="img/fechamento.jpg" alt="Janela de fechamento de caixa com valores esperados por forma de pagamento"></div>
+ </div>
+</section>
+
+<!-- ANTES DEPOIS -->
+<section style="padding: 96px 0; background: #0b2447; color: #ffffff">
+ <div class="wrap" style="max-width: 980px">
+  <h2 class="h2" style="margin: 0 0 44px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -1px; text-align: center">A sua loja hoje <span style="color: #8fa3c9">×</span> <span style="color: #f0a500">com o BoosterPDV</span></h2>
+  <div class="tbl">
+   <table style="width: 100%; min-width: 560px; border-collapse: collapse; font-size: 17px">
+    <thead>
+     <tr>
+      <th style="text-align: left; padding: 16px 20px; color: #ff9b9b; font-family: Poppins, sans-serif; font-size: 18px; border-bottom: 2px solid rgba(255,255,255,.15)">Hoje</th>
+      <th style="text-align: left; padding: 16px 20px; color: #f0a500; font-family: Poppins, sans-serif; font-size: 18px; border-bottom: 2px solid rgba(255,255,255,.15)">Com o BoosterPDV</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr><td style="padding: 16px 20px; color: #c9d6ee; border-bottom: 1px solid rgba(255,255,255,.1)">Venda anotada no caderno (quando anota)</td><td style="padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,.1)">Toda venda registrada com um bip</td></tr>
+     <tr><td style="padding: 16px 20px; color: #c9d6ee; border-bottom: 1px solid rgba(255,255,255,.1)">Caixa que não bate e ninguém sabe por quê</td><td style="padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,.1)">Diferença calculada na hora do fechamento</td></tr>
+     <tr><td style="padding: 16px 20px; color: #c9d6ee; border-bottom: 1px solid rgba(255,255,255,.1)">Descobre que acabou quando o cliente pede</td><td style="padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,.1)">Aviso de estoque baixo antes de faltar</td></tr>
+     <tr><td style="padding: 16px 20px; color: #c9d6ee; border-bottom: 1px solid rgba(255,255,255,.1)">Ditar a chave PIX e conferir valor errado</td><td style="padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,.1)">QR Code com o valor exato</td></tr>
+     <tr><td style="padding: 16px 20px; color: #c9d6ee">Fiado espalhado em papéis</td><td style="padding: 16px 20px">Contas a receber por cliente, com vencimento</td></tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+</section>
+
+<!-- OBJEÇÕES -->
+<section style="padding: 96px 0; background: #ffffff">
+ <div class="wrap">
+  <h2 class="h2" style="margin: 0 0 44px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -1px; text-align: center; color: #0b2447">"Mas sistema é caro e complicado…"<br><span style="color: #15408a">Este não.</span></h2>
+  <div class="grid4">
+   <div style="border: 1px solid #dfe4ec; border-radius: 16px; padding: 28px">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#15408a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+    <h3 style="margin: 16px 0 8px; font-family: Poppins, sans-serif; font-size: 20px; color: #0b2447">Sem instalar</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4a5568">É um arquivo que abre no Chrome ou Edge. Dois cliques e está vendendo.</p>
+   </div>
+   <div style="border: 1px solid #dfe4ec; border-radius: 16px; padding: 28px">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#15408a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l20 20"></path><path d="M8.5 16.5a5 5 0 0 1 7 0M5 13a10 10 0 0 1 5-2.7M19 13a10 10 0 0 0-2-1.5M12 20h.01"></path></svg>
+    <h3 style="margin: 16px 0 8px; font-family: Poppins, sans-serif; font-size: 20px; color: #0b2447">Sem internet? Vende igual</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4a5568">A internet caiu e o caixa continua funcionando normalmente.</p>
+   </div>
+   <div style="border: 1px solid #dfe4ec; border-radius: 16px; padding: 28px">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#15408a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"></path><path d="M9 12l2 2 4-4"></path></svg>
+    <h3 style="margin: 16px 0 8px; font-family: Poppins, sans-serif; font-size: 20px; color: #0b2447">Seus dados protegidos</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4a5568">Backup automático numa pasta do seu computador a cada alteração.</p>
+   </div>
+   <div style="border: 1px solid #dfe4ec; border-radius: 16px; padding: 28px">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#15408a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6v12M8 6v12M11 6v12M15 6v12M20 6v12M17.5 6v12"></path></svg>
+    <h3 style="margin: 16px 0 8px; font-family: Poppins, sans-serif; font-size: 20px; color: #0b2447">Seu leitor já serve</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4a5568">Qualquer leitor que funcione como teclado. Tem até tela para testar.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- OFERTA -->
+<section id="comprar" style="padding: 96px 0; background: #fff6e3">
+ <div class="wrap" style="max-width: 640px">
+  <div style="background: #ffffff; border-radius: 24px; padding: 44px 40px; box-shadow: 0 30px 70px rgba(11,36,71,.15); border: 2px solid #f0a500; text-align: center">
+   <p style="margin: 0 0 8px; font-weight: 700; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #a35a00">Comece hoje</p>
+   <h2 style="margin: 0 0 24px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 34px; line-height: 1.15; color: #0b2447">BoosterPDV completo</h2>
+   <ul style="list-style: none; margin: 0 0 28px; padding: 0; text-align: left; font-size: 17px; line-height: 1.5; display: flex; flex-direction: column; gap: 12px">
+    <li style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#157a48" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5 9-10"></path></svg>Vendas com leitor de código de barras e cupom</li>
+    <li style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#157a48" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5 9-10"></path></svg>PIX com QR Code, dinheiro, cartão e a prazo</li>
+    <li style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#157a48" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5 9-10"></path></svg>Estoque automático com aviso de baixo e esgotado</li>
+    <li style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#157a48" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5 9-10"></path></svg>Abertura e fechamento de caixa, sangria e suprimento</li>
+    <li style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#157a48" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5 9-10"></path></svg>Relatórios, contas a pagar e a receber</li>
+    <li style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#157a48" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5 9-10"></path></svg>Backup automático e manual + manual completo de uso</li>
+   </ul>
+   <p style="margin: 0; font-family: Poppins, sans-serif; font-weight: 800; font-size: 48px; color: #0b2447">R$ 49,90</p>
+   <p style="margin: 4px 0 28px; font-size: 15px; color: #5b6b85">Pagamento único · sem mensalidade · use para sempre</p>
+   <a href="LINK_DO_CHECKOUT_KIWIFY" class="cta" style="width: 100%; box-sizing: border-box; min-height: 66px; font-size: 21px">Quero o BoosterPDV agora</a>
+   <p style="margin: 18px 0 0; font-size: 15px; color: #5b6b85">Garantia de 7 dias: se não gostar, devolvemos seu dinheiro.</p>
+  </div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding: 96px 0; background: #ffffff">
+ <div class="wrap" style="max-width: 820px">
+  <h2 class="h2" style="margin: 0 0 36px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 40px; text-align: center; color: #0b2447">Perguntas frequentes</h2>
+  <div style="display: flex; flex-direction: column; gap: 14px">
+   <details style="border: 1px solid #dfe4ec; border-radius: 14px; padding: 20px 24px"><summary style="cursor: pointer; font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; color: #0b2447">Serve para o meu negócio?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4a5568">Foi pensado para MEIs, delivery e lojas pequenas que hoje controlam tudo no papel ou de cabeça: loja de roupa, açaí, lanchonete, papelaria, loja de celular, depósito e afins. Ele cuida do controle de vendas, estoque e caixa.</p></details>
+   <details style="border: 1px solid #dfe4ec; border-radius: 14px; padding: 20px 24px"><summary style="cursor: pointer; font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; color: #0b2447">Preciso de internet para usar?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4a5568">Não. Vender, cadastrar e controlar estoque funciona 100% offline. A internet só é usada para gerar o QR Code do PIX na primeira vez; sem ela, o código Copia e Cola continua funcionando.</p></details>
+   <details style="border: 1px solid #dfe4ec; border-radius: 14px; padding: 20px 24px"><summary style="cursor: pointer; font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; color: #0b2447">O PIX confirma o pagamento sozinho?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4a5568">O sistema gera a cobrança com o valor certo. Você vê o pagamento cair no app do seu banco e confirma com um clique. Sem intermediário e sem taxa sobre a venda.</p></details>
+   <details style="border: 1px solid #dfe4ec; border-radius: 14px; padding: 20px 24px"><summary style="cursor: pointer; font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; color: #0b2447">Emite nota fiscal?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4a5568">Não. O BoosterPDV controla vendas, estoque e caixa, mas não emite NF-e/NFC-e. Consulte seu contador sobre as obrigações fiscais do seu negócio.</p></details>
+   <details style="border: 1px solid #dfe4ec; border-radius: 14px; padding: 20px 24px"><summary style="cursor: pointer; font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; color: #0b2447">Funciona em mais de um computador?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4a5568">Sim, mas cada computador guarda os próprios dados. Para levar de um para outro, use o backup (pasta automática ou arquivo .json).</p></details>
+   <details style="border: 1px solid #dfe4ec; border-radius: 14px; padding: 20px 24px"><summary style="cursor: pointer; font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; color: #0b2447">Qual navegador eu uso?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4a5568">Google Chrome ou Microsoft Edge, que têm o backup automático em pasta. Em outros navegadores você usa o backup manual.</p></details>
+  </div>
+ </div>
+</section>
+
+<!-- CTA FINAL -->
+<section style="padding: 104px 0; background: #0b2447; color: #ffffff; text-align: center">
+ <div class="wrap" style="max-width: 860px">
+  <h2 class="h2" style="margin: 0 0 20px; font-family: Poppins, sans-serif; font-weight: 800; font-size: 44px; line-height: 1.15; letter-spacing: -1px">Daqui a 30 dias, você quer estar contando nota no caderninho <span style="color: #f0a500">ou fechando o caixa em um clique?</span></h2>
+  <p style="margin: 0 auto 36px; max-width: 620px; font-size: 19px; line-height: 1.6; color: #c9d6ee">Cada dia sem controle é dinheiro que some sem deixar rastro. Comece hoje.</p>
+  <a href="LINK_DO_CHECKOUT_KIWIFY" class="cta" style="min-height: 68px; font-size: 21px; padding: 0 44px">Quero parar de perder dinheiro</a>
+ </div>
+</section>
+
+<footer style="background: #071830; color: #8fa3c9; padding: 28px 0; font-size: 14px">
+ <div class="wrap" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px">
+  <span>BoosterPDV · Controle de vendas para MEI, delivery e lojas pequenas</span>
+  <span>© sitebooster</span>
+ </div>
+</footer>
+
+</div>
+
+</body>
+</html>
